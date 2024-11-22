@@ -1,4 +1,4 @@
-package com.example.StringAlgo;
+package com.example.String;
 
 import java.util.Arrays;
 import java.util.HashMap;

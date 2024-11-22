@@ -1,4 +1,4 @@
-package com.example.StringAlgo;
+package com.example.String;
 
 public class Palindrome {
 	public static boolean isPalindrome(String s) {

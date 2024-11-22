@@ -1,10 +1,10 @@
-package com.example.StringAlgoTest;
+package com.example.StringTest;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.example.StringAlgo.Palindrome;
+import com.example.String.Palindrome;
 
 public class PalindromeTest {
 

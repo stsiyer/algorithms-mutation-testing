@@ -1,4 +1,4 @@
-package com.example;
+package com.example.NumberTheory;
 class UtilityMethods {
     public boolean isEven(int num) {
         return num % 2 == 0;
@@ -83,88 +83,8 @@ class UtilityMethods {
 
 }
 
-public class App {
+public class NumberTheory {
     static UtilityMethods util = new UtilityMethods();
-
-    public static boolean isPrime(int num) {
-        if (util.isEven(num) && num != 2) {
-            return false;
-        }
-
-        if (num > 1) {
-            for (int i = 2; i < num; i++) {
-                if (num % i == 0) {
-                    return false;
-                }
-            }
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public static boolean isPerfect(int num) {
-        int sumDivisors = 0;
-
-        for (int i = 1; i < num; i++) {
-            if (num % i == 0) {
-                sumDivisors += i;
-            }
-        }
-
-        if (sumDivisors == num)
-            return true;
-        else
-            return false;
-    }
-
-    // If a number is divisible by the sum of its digits, then it will be known as a
-    // Harshad Number.
-    public static boolean isHarshad(int num) {
-        if (num == 0) {
-            return false;
-        }
-
-        int remainder, totalSum = 0;
-        int originalNum = num;
-
-        while (num > 0) {
-            remainder = num % 10;
-            totalSum += remainder;
-            num /= 10;
-        }
-
-        return originalNum % totalSum == 0;
-    }
-
-    // A number is called happy if it leads to 1 after a sequence of steps wherein
-    // each step number
-    // is replaced by the sum of squares of its digit that is if
-    // we start with Happy Number and keep replacing it with digits square sum, we
-    // reach 1.
-    public static boolean isHappynumber(int num) {
-        int slow = num;
-        int fast = num;
-
-        // Heavily Integration Testing as
-        // it calls numSquareSum
-        while (true) {
-            slow = util.numSquareSum(slow);
-            fast = util.numSquareSum(util.numSquareSum(fast));
-
-            if (slow != fast) {
-                continue;
-            } else {
-                break;
-            }
-        }
-
-        if (slow == 1) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
     // Triangular Numbers are those numbers which are obtained by continued
     // summation of the natural numbers 1, 2, 3, 4, 5,...
@@ -379,8 +299,5 @@ public class App {
         }
 
         return ((n - m) * isEulerian(n - 1, m - 1) + (m + 1) * isEulerian(n - 1, m));
-    }
-
-    public static void main(String[] args) {
     }
 }

@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import com.example.DP.CoinChangeSource;
 
-public class CoinChangeSourceTest {
+public class CoinChangeTest {
 
 	@Test
 	public void testChange() {
@@ -47,14 +47,5 @@ public class CoinChangeSourceTest {
 		int amount3 = 502;
 		assertEquals(51, ccs.minimumCoins(coins3, amount3)); 
 		
-		/*
-		 * Running the below test produces error - the function minimumCoins() does not 
-		 * factor cases when the change cannot be formed!
-		 * 
-		 * // Test 4
-		 * int [] coins4 = {100}; 
-		 * int amount4 = 101;
-		 * assertEquals(-1, ccs.minimumCoins(coins4, amount4)); 
-		*/
 	}
 }

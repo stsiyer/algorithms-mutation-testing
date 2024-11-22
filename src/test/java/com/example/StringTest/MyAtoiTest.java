@@ -1,9 +1,9 @@
-package com.example.StringAlgoTest;
+package com.example.StringTest;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.example.StringAlgo.MyAtoi;
+import com.example.String.MyAtoi;
 
 public class MyAtoiTest {
 

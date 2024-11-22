@@ -1,10 +1,10 @@
-package com.example.StringAlgoTest;
+package com.example.StringTest;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.example.StringAlgo.Anagram;
+import com.example.String.Anagram;
 
 public class AnagramTest {
 	Anagram nm = new Anagram();

@@ -1,4 +1,4 @@
-package com.example.StringAlgo;
+package com.example.String;
 
 public class MyAtoi {
 	public int myAtoi(String s) {
