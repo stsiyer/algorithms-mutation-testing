@@ -1,0 +1,47 @@
+# Maven target directory
+/target/
+
+# Logs
+*.log
+
+# Compiled class files
+*.class
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# IDE-specific files (IntelliJ IDEA, Eclipse, VSCode, etc.)
+.idea/
+*.iml
+*.iws
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Maven dependencies and caches
+.m2/
+
+# Coverage and report files
+/site/
+*.jacoco.exec
+jacoco-report/
+
+# Generated files
+*.jar
+*.war
+*.ear
+
+# PIT Mutation Testing reports
+pit-reports/
+
+# Test results
+*.out
+*.xml
